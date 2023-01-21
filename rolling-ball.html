@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div 
+        id="frame"
+        style="
+            position: absolute;
+            width: 100px;
+            height: 100px;
+            border-color: antiquewhite;
+            border: 2px;
+            background-color: darkgreen;
+        "
+    >
+    <h1 style="text-align: center; color: aliceblue;">Rolling Ball</h1>
+    </div>
+    <div id="ball" style="
+        z-index:5;
+        position: absolute;
+        left: 0px;
+        top: 200px;
+        width: 100px;
+        height: 100px;
+        border-radius: 50%;
+        background-color: bisque;
+    "></div>
+</body>
+<script>
+    var velocity = 100;
+    var colorIndex = 0;
+
+    var colors = ["bisque", "aquamarine","darkkhaki", "chartreuse"]
+    
+    var ball = {
+        width: 100,
+        height: 100,
+        color: "bisque" 
+    }
+
+    var xAxis = {
+        position: 0,
+        leftEdge: 0,
+        rightEdge: 800,
+        direction: -1    
+    }
+    
+    var yAxis = {
+        position: 0,
+        topEdge: 0,
+        bottomEdge: 700,
+        direction: -1
+    }
+
+    
+    var frame = document.getElementById('frame')
+    frame.style.width = xAxis.rightEdge + ball.width + 'px'
+    frame.style.height = yAxis.bottomEdge + ball.height + 'px'
+
+    var balloon = document.getElementById('ball')
+    function moveBall(){
+        if(xAxis.position <= xAxis.leftEdge || xAxis.position >= xAxis.rightEdge){
+            xAxis.direction = xAxis.direction * -1
+            changeColor()
+        }
+        xAxis.position = xAxis.position + (velocity * xAxis.direction)
+        balloon.style.left = xAxis.position + 'px'
+
+        if(yAxis.position <= yAxis.topEdge || yAxis.position >= yAxis.bottomEdge){
+            yAxis.direction = yAxis.direction * -1
+            changeColor()
+        }
+        yAxis.position = yAxis.position + (velocity * yAxis.direction)
+        balloon.style.top = yAxis.position + 'px'
+    }
+
+    function changeColor(){
+        balloon.style.background = colors[colorIndex]
+        if(colorIndex == 4){
+            colorIndex = 0
+        }
+        colorIndex ++
+   }
+   
+   setInterval(moveBall,100)
+
+</script>
+</html>
