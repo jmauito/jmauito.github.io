@@ -1,0 +1,16 @@
+.exercise-card {
+    border: 1px solid;
+    border-color: darkgrey;
+    border-radius: 5%;
+    margin: 1rem;
+    padding: 1rem;
+    box-shadow: 0.3rem 0.3rem 0.1rem grey;
+}
+
+.social-network-card{
+    margin: 10px;
+}
+
+.social-network-image{
+    width:50px
+}
