@@ -46,32 +46,34 @@
     var xAxis = {
         position: 0,
         leftEdge: 0,
-        rightEdge: 800,
+        rightEdge: window.innerWidth,
         direction: -1    
     }
     
     var yAxis = {
         position: 0,
         topEdge: 0,
-        bottomEdge: 700,
+        bottomEdge: window.innerHeight,
         direction: -1
     }
 
     
     var frame = document.getElementById('frame')
-    frame.style.width = xAxis.rightEdge + ball.width + 'px'
-    frame.style.height = yAxis.bottomEdge + ball.height + 'px'
+    frame.style.width = xAxis.rightEdge + 'px'
+    frame.style.height = yAxis.bottomEdge + 'px'
 
     var balloon = document.getElementById('ball')
     function moveBall(){
-        if(xAxis.position <= xAxis.leftEdge || xAxis.position >= xAxis.rightEdge){
+        xAxis.rightEdge = window.innerWidth
+        yAxis.bottomEdge = window.innerHeight
+        if(xAxis.position <= xAxis.leftEdge || xAxis.position >= xAxis.rightEdge - ball.width ){
             xAxis.direction = xAxis.direction * -1
             changeColor()
         }
         xAxis.position = xAxis.position + (velocity * xAxis.direction)
         balloon.style.left = xAxis.position + 'px'
 
-        if(yAxis.position <= yAxis.topEdge || yAxis.position >= yAxis.bottomEdge){
+        if(yAxis.position <= yAxis.topEdge || yAxis.position >= yAxis.bottomEdge - ball.height ){
             yAxis.direction = yAxis.direction * -1
             changeColor()
         }
