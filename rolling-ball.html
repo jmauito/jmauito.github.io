@@ -61,19 +61,31 @@
     var frame = document.getElementById('frame')
     frame.style.width = xAxis.rightEdge + 'px'
     frame.style.height = yAxis.bottomEdge + 'px'
-
     var balloon = document.getElementById('ball')
     function moveBall(){
         xAxis.rightEdge = window.innerWidth
         yAxis.bottomEdge = window.innerHeight
+
+        frame.style.width = xAxis.rightEdge + 'px'
+        frame.style.height = yAxis.bottomEdge + 'px'
+
+        if(xAxis.position >= xAxis.rightEdge - ball.width){
+            xAxis.position = xAxis.rightEdge - ball.width
+        }
+
         if(xAxis.position <= xAxis.leftEdge || xAxis.position >= xAxis.rightEdge - ball.width ){
             xAxis.direction = xAxis.direction * -1
             changeColor()
         }
         xAxis.position = xAxis.position + (velocity * xAxis.direction)
         balloon.style.left = xAxis.position + 'px'
+        
+        if(yAxis.position >= yAxis.bottomEdge - ball.height){
+            yAxis.position = yAxis.bottomEdge - ball.height
+        }
 
         if(yAxis.position <= yAxis.topEdge || yAxis.position >= yAxis.bottomEdge - ball.height ){
+            
             yAxis.direction = yAxis.direction * -1
             changeColor()
         }
