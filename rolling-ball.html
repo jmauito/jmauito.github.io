@@ -32,9 +32,9 @@
     "></div>
 </body>
 <script>
-    var velocity = 100;
+    var velocity = 10;
     var colorIndex = 0;
-
+    
     var colors = ["bisque", "aquamarine","darkkhaki", "chartreuse"]
     
     var ball = {
@@ -46,14 +46,14 @@
     var xAxis = {
         position: 0,
         leftEdge: 0,
-        rightEdge: window.innerWidth,
+        rightEdge: calculateFrameWidth(),
         direction: -1    
     }
     
     var yAxis = {
         position: 0,
         topEdge: 0,
-        bottomEdge: window.innerHeight,
+        bottomEdge: calculateFrameHeight(),
         direction: -1
     }
 
@@ -63,8 +63,8 @@
     frame.style.height = yAxis.bottomEdge + 'px'
     var balloon = document.getElementById('ball')
     function moveBall(){
-        xAxis.rightEdge = window.innerWidth
-        yAxis.bottomEdge = window.innerHeight
+        xAxis.rightEdge = calculateFrameWidth()
+        yAxis.bottomEdge = calculateFrameHeight()
 
         frame.style.width = xAxis.rightEdge + 'px'
         frame.style.height = yAxis.bottomEdge + 'px'
@@ -100,8 +100,16 @@
         }
         colorIndex ++
    }
+
+   function calculateFrameWidth(){
+    return window.innerWidth - 30; 
+   }
+
+   function calculateFrameHeight(){
+    return window.innerHeight - 30
+   }
    
-   setInterval(moveBall,100)
+   setInterval(moveBall,50)
 
 </script>
 </html>
