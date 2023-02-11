@@ -1,10 +1,50 @@
+body{
+    --header-main-background-color: #255459;
+    --header-main-text-color: white;
+    --text-title-color: #F27777;
+    --footer-main-background-color: #032326;
+    --footer-main-text-color: #6c757d;
+}
+
+.header-bar{
+    background-color: var(--header-main-background-color);
+    color: var(--header-main-text-color);
+    margin: 0;
+    display:flex; 
+    justify-content:space-between
+}
+
+.footer-bar{
+    background-color: var(--footer-main-background-color);
+    color: var(--footer-main-text-color);
+}
+
+.content-area{
+    display:flex; 
+    justify-content:center;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
 .exercise-card {
     border: 1px solid;
     border-color: darkgrey;
-    border-radius: 5%;
+    width: 20rem;
+    min-width: 20rem;
     margin: 1rem;
-    padding: 1rem;
+    padding: 0rem;
     box-shadow: 0.3rem 0.3rem 0.1rem grey;
+}
+.exercise-card-header {
+    width: 100%;
+    background-color: var(--header-main-background-color);
+    color: var(--header-main-text-color);
+    padding: 0.3rem;
+}
+
+
+.exercise-card-text {
+    padding: 0.3rem;
 }
 
 .social-network-card{
@@ -13,4 +53,8 @@
 
 .social-network-image{
     width:50px
+}
+
+.text-title{
+    color: var(--text-title-color);
 }
