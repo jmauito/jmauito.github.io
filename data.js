@@ -4,7 +4,7 @@ function getData(){
 data = {
     name: "Mauricio Zárate",
     rol: "Software developer",
-    story: "Software developer actually learning MERN stack and Java with Spring Boot. " +
+    story: "Software developer, actually learning MERN stack and Java with Spring Boot. " +
     "Interesting in Software Architecture, Software Development Process and Clean Code.",
     projectsDescription: "These are some of the exercises I have done. All are available for use and download on GitHub",
     exercises: [
