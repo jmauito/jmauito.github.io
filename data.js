@@ -5,7 +5,8 @@ data = {
     name: "Mauricio Zárate",
     rol: "Software developer",
     story: "Software developer, actually learning MERN stack and Java with Spring Boot. " +
-    "Interesting in Software Architecture, Software Development Process and Clean Code.",
+    "Interesting in Software Architecture, Software Development Process and Clean Code." +
+    "Find me in github as jmauito and Linkedin as jorge-mauricio-zárate-ponce",
     projectsDescription: "These are some of the exercises I have done. All are available for use and download on GitHub",
     exercises: [
         {
@@ -15,6 +16,14 @@ data = {
             link: "https://jmauito.github.io/rolling-ball.html",
             repository: "https://github.com/jmauito/jmauito",
             image: "./img/rolling-ball.png"
+        },
+        {
+            title: "Eye movement",
+            description: "Eyes who chase the cursor.",
+            stack: "HTML, CSS, Javascript",
+            link: "https://jmauito.github.io/eye-movement/",
+            repository: "https://github.com/jmauito/eye-movement",
+            image: "./img/eye-movement.png"
         },
         {
             title: "Pac-man",
@@ -45,7 +54,7 @@ data = {
             description: "Client management project developed in Java course Universidad java in Udemy",
             stack: "Java",
             link: "",
-            repository: "https://github.com/jmauito/vue-multi-filter-data-table",
+            repository: "https://github.com/jmauito/ControlClientes",
             image: "./img/control-de-clientes.png"
         },
         {
