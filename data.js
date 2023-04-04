@@ -23,7 +23,7 @@ data = {
             stack: "HTML, CSS, Javascript",
             link: "https://jmauito.github.io/eye-movement/",
             repository: "https://github.com/jmauito/eye-movement",
-            image: "./img/eye-movement.png"
+            image: "./img/eye-movement.PNG"
         },
         {
             title: "Pac-man",
