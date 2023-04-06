@@ -14,7 +14,7 @@ data = {
             description: "A bouncing ball off the edges of an area.",
             stack: "HTML, CSS, Javascript",
             link: "https://jmauito.github.io/rolling-ball.html",
-            repository: "https://github.com/jmauito/jmauito",
+            repository: "https://github.com/jmauito/rolling-ball",
             image: "./img/rolling-ball.png"
         },
         {
@@ -30,7 +30,7 @@ data = {
             description: "Pacman figure who moves into screen.",
             stack: "HTML, CSS, Javascript",
             link: "https://jmauito.github.io/pacman/",
-            repository: "https://github.com/jmauito/jmauito",
+            repository: "https://github.com/jmauito/pac-man",
             image: "./img/pac-man.png"
         },
         {
