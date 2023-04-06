@@ -13,7 +13,7 @@ data = {
             title: "Rolling ball",
             description: "A bouncing ball off the edges of an area.",
             stack: "HTML, CSS, Javascript",
-            link: "https://jmauito.github.io/rolling-ball.html",
+            link: "./rolling-ball.html",
             repository: "https://github.com/jmauito/rolling-ball",
             image: "./img/rolling-ball.png"
         },
@@ -21,7 +21,7 @@ data = {
             title: "Eye movement",
             description: "Eyes who chase the cursor.",
             stack: "HTML, CSS, Javascript",
-            link: "https://jmauito.github.io/eye-movement/",
+            link: "./eye-movement/index.html",
             repository: "https://github.com/jmauito/eye-movement",
             image: "./img/eye-movement.png"
         },
@@ -29,7 +29,7 @@ data = {
             title: "Pac-man",
             description: "Pacman figure who moves into screen.",
             stack: "HTML, CSS, Javascript",
-            link: "https://jmauito.github.io/pacman/",
+            link: "./pacman/index.html",
             repository: "https://github.com/jmauito/pac-man",
             image: "./img/pac-man.png"
         },
