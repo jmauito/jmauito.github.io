@@ -10,6 +10,22 @@ data = {
     projectsDescription: "These are some of the exercises I have done. All are available for use and download on GitHub",
     exercises: [
         {
+            title: "Tic tac toe",
+            description: "A simple game of tic tac toe in React.",
+            stack: "React",
+            link: "https://jmauito.github.io/react-tic-tac-toe/",
+            repository: "https://github.com/jmauito/react-tic-tac-toe",
+            image: "./img/tic-tac-toe.png"
+        },
+        {
+            title: "Harry Potter project",
+            description: "Information about Harry Potter characters.",
+            stack: "React",
+            link: "https://jmauito.github.io/harry-potter-project",
+            repository: "https://github.com/jmauito/harry-potter-project",
+            image: "./img/hp.png"
+        },
+        {
             title: "Rolling ball",
             description: "A bouncing ball off the edges of an area.",
             stack: "HTML, CSS, Javascript",
