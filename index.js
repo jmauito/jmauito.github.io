@@ -1,9 +1,10 @@
-window.onload = (ev) => {
-  const data = getData();
-  render();
+import data from './data.js';
+
+window.onload = () => {
+  render(data);
 };
 
-function render() {
+function render(data) {
   const imageTitle = document.getElementById("image-title");
   imageTitle.innerHTML = data.name;
 

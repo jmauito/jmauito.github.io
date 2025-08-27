@@ -1,7 +1,4 @@
-function getData(){
-    return data
-}  
-data = {
+const data = {
     name: "Mauricio Zárate",
     rol: "Software developer",
     story: "Software developer, actually learning MERN stack and Java with Spring Boot. " +
@@ -84,4 +81,6 @@ data = {
 
 
     ]
-}
+};
+
+export default data;
